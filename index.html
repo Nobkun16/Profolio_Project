@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria's Profolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Hello can also see the code for the flappy bird clone in this repo but it causes too much lag to run in here ;) -->
+     <!-- You can also find a secret game here if your pc can handle it -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo" ><a href="#home">Maria Maria</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Maria</h1>
+            <p>A passionate Web Developer</p>
+            <a href="#projects" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <div class="intro-card">
+                    <h3>Full-Stack Developer & Game Enthusiast</h3>
+                    <p class="tagline">Creating digital experiences that blend functionality with creativity</p>
+                    
+                    <div class="bio-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <div>
+                                <h4>Web Development</h4>
+                                <p>building responsive websites and web applications using modern frameworks</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-gamepad"></i>
+                            <div>
+                                <h4>Game Development</h4>
+                                <p>Passionate about creating 2D games with engaging mechanics using Godot and Love2D</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Problem Solver</h4>
+                                <p>Love tackling complex challenges and finding elegant solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="main-bio">
+                        I'm a developer who thrives at advancing my skill and further improving my skill.
+                    </p>
+                    
+
+                </div>
+            </div>
+            <div class="about-img">
+                <div class="image-container">
+                    <img src="/asset/curse.png" alt="Maria - Web and Game Developer">
+                   
+                </div>
+                <div class="tech-stack">
+                    <p>Current Tech Stack:</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-html5" title="HTML"></i>
+                        <i class="fab fa-css3-alt" title="CSS"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-git-alt" title="Git"></i>
+                        <i class="fas fa-database" title="Databases"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Semantic markup, accessibility, SEO optimization</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>animations, responsive design</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>For dynamic and responsive website</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <h3>django</h3>
+                    <p>For robust Backend</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, ORM, MySQL, SQLITE</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Version control, GitHub, collaboration workflows</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-gamepad"></i> 
+                    <h3>Lua</h3>
+                    <p>
+                    For Game Development using Love2d
+                    </p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>GDScript</h3>
+                    <p>
+                    2D/3D mechanics,  
+                    and procedural generation. Familiar with Godot's node system.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+   <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1 - Flapping Bat Clone -->
+                <div class="project">
+                    <div class="project-media">
+                        <video muted loop>
+                            <source src="asset/game (1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Flapping Bat Clone</h3>
+                        <p>A fun clone of the classic Flappy Bird game with custom bat characters and obstacles.</p>
+                        <p class="project-tech">Tech: GDScript, Godot Engine</p>
+                        <a href="https://github.com/Nobkun16" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Giraffe Jump -->
+                <div class="project">
+                    <div class="project-media">
+                        <video muted loop>
+                            <source src="asset/game (2).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Giraffe Jump</h3>
+                        <p>An endless runner game featuring a giraffe character jumping over obstacles.</p>
+                        <p class="project-tech">Tech: GDScript, Godot Engine</p>
+                        <a href="jump.html" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Booking System -->
+                <div class="project">
+                    <div class="project-media">
+                        <img src="asset/milagrosa.png" alt="Milagrosa Happiness Resort Booking System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Booking System</h3>
+                        <p>A complete reservation system for Milagrosa Happiness Resort with admin dashboard.</p>
+                        <p class="project-tech">Tech: Django, Cloudinary, SQLite</p>
+                        <a href="https://milagrosahappinessresort.up.railway.app/" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Alex Developer. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Nobkun16"><i class="fab fa-github"></i></a>
+          
+            </div>
+        </div>
+    </footer>
+
+    
+    <script>
+        // Auto-play videos when hovered
+        document.querySelectorAll('.project-media video').forEach(video => {
+            video.addEventListener('mouseenter', () => video.play());
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    </script>
+</body>
+</html>

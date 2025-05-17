@@ -1,0 +1,154 @@
+       :root {
+            --primary-color: #FF9F1C;
+            --secondary-color: #2EC4B6;
+            --dark-color: #1A2E2E;
+            --light-color: #F5F5F5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+            background-image: linear-gradient(
+                rgba(26, 46, 46, 0.9),
+                rgba(26, 46, 46, 0.9)
+            ), url('/asset/curse_fruit.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .game-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .game-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1.5rem;
+            border-radius: 15px;
+        }
+        
+        .game-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .game-header p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .game-frame-wrapper {
+            width: 100%;
+            max-width: 324px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 4px solid var(--primary-color);
+        }
+        
+        .game-frame {
+            width: 100%;
+            height: 576px;
+            border: none;
+            background: #000;
+        }
+        
+        .controls {
+            margin-top: 2rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .controls h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+        
+        .controls-list {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .control-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .control-key {
+            background: var(--primary-color);
+            color: var(--dark-color);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 2px solid var(--primary-color);
+        }
+        
+        .back-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .game-header h1 {
+                font-size: 2rem;
+            }
+        }
